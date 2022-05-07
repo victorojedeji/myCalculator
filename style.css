@@ -43,19 +43,12 @@ header {
     align-items: center;
 }
 
-/* .background-toggle {
-    height: 2.5rem;
-    width: 2.5rem;
-    border: .5px solid #9e9a9ad4;
-    border-radius: 10rem;
-} */
 
-/* The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;
-    width: 5rem;
-    height: 3rem;
+    width: 4rem;
+    height: 2.5rem;
 }
   
   
@@ -73,7 +66,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: rgb(230, 230, 230);
     -webkit-transition: .2s;
     transition: .2s;
 }
@@ -81,31 +74,31 @@ header {
 .slider:before {
     position: absolute;
     content: "";
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2.2rem;
+    width: 2.2rem;
     left: .25rem;
-    bottom: .25rem;
+    bottom: .17rem;
     background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .2s;
+    transition: .2s;
 }
   
 input:checked + .slider {
-    background-color: #979fa6;
+    background-color: #000000;
 }
   
 input:focus + .slider {
-    box-shadow: 0 0 1px #9fa9b1;
+    box-shadow: 0 0 1px rgb(230, 230, 230);
 }
   
 input:checked + .slider:before {
-    -webkit-transform: translateX(1.9rem);
-    -ms-transform: translateX(1.9rem);
-    transform: translateX(1.9rem);
+    -webkit-transform: translateX(1.3rem);
+    -ms-transform: translateX(1.3rem);
+    transform: translateX(1.3rem);
 }
   
 .slider.round {
-    border-radius: 34rem;
+    border-radius: 30rem;
 }
   
 .slider.round:before {
@@ -165,4 +158,41 @@ input:checked + .slider:before {
 .output .current-operand {
     color: white;
     font-size: 2.5rem;
+}
+
+/* dark theme */
+
+h1.dark {
+    color: #ffffff;
+}
+
+.wrapper.dark {
+    background: #181818;
+}
+
+.output.dark {
+    background-color: #fffdfd;
+}
+
+.output.dark .previous-operand {
+    color: #000000;
+}
+
+.output.dark .current-operand {
+    color: #000000;
+}
+
+.calculator-grid.dark > button {
+    background: #191919;
+    color: #ffffff;
+    border: 1px solid #444242;
+    outline: none;
+}
+
+.calculator-grid.dark > button:hover {
+    background: #353434;
+}
+
+.calculator-grid.dark > button:active {
+    background: #2c2b2b;
 }
