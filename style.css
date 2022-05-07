@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500&display=swap');
+
 *, *::before, *::after {
     padding: 0;
     margin: 0;
@@ -10,6 +12,11 @@ html {
 
 body {
     font-size: 1.6rem;
+}
+
+h1 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 200;
 }
 
 .container {
@@ -36,11 +43,73 @@ header {
     align-items: center;
 }
 
-.background-toggle {
+/* .background-toggle {
     height: 2.5rem;
     width: 2.5rem;
     border: .5px solid #9e9a9ad4;
     border-radius: 10rem;
+} */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 5rem;
+    height: 3rem;
+}
+  
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 2.5rem;
+    width: 2.5rem;
+    left: .25rem;
+    bottom: .25rem;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #979fa6;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #9fa9b1;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(1.9rem);
+    -ms-transform: translateX(1.9rem);
+    transform: translateX(1.9rem);
+}
+  
+.slider.round {
+    border-radius: 34rem;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
 }
 
 .calculator-grid {
@@ -59,10 +128,16 @@ header {
     outline: none;
     background-color: rgba(255, 255, 255, .75);
     transition: .2s ease-in;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 500;
 }
 
 .calculator-grid > button:hover {
     background-color: rgba(192, 191, 191, 0.9);
+}
+
+.calculator-grid > button:active {
+    background-color: rgba(169, 166, 166, 0.9);
     transform: scale(.98);
 }
 
