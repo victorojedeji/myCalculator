@@ -63,6 +63,10 @@ h1 {
     color: var(--fontColor);
 }
 
+p {
+    font-family: 'Mukta', sans-serif;
+}
+
 .container {
     background: url(./robot.jpg);
     background-repeat: no-repeat;
