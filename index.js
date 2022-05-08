@@ -1,3 +1,10 @@
+let dataNum = document.querySelector(".digitBtn");
+let dataOperator = document.querySelector(".operationBtn");
+let delOperator = document.querySelector(".deleteBtn");
+let clearAll = document.querySelector("#clear");
+let equalTo = document.querySelector("#equalTo");
+
+
 function getUpperVal(){
 	return document.querySelector("#upper-value").innerText;
 }
