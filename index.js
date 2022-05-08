@@ -10,9 +10,28 @@ function getCurrentVal(){
 	return document.querySelector("#current-value").innerText;
 }
 
-function printCurrentVal(){
-	return document.querySelector("#current-value").innerText;
+function printCurrentVal(digitVal){
+	if (digitVal === '') return document.querySelector("#current-value").innerText = digitVal
+	else return document.querySelector("#current-value").innerText = digitVal;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

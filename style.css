@@ -20,6 +20,7 @@
 .light-theme {
     --fontColor: var(--dark);
     --wrapperBg: var(--light);
+    --outputCol: var(--light);
     --outputBg: var(--reallyDark);
     --outputPrevOperaCol: var(--opaqueGrey);
     --outputCurOperaCol: var(--light);
@@ -197,6 +198,7 @@ input:checked + .slider:before {
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
+    color: var(--outputCol);
 }
 
 .output .previous-operand {
