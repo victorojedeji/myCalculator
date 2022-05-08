@@ -1,18 +1,24 @@
+// getting all html elements needed and binding it to a value
 let dataNum = document.querySelectorAll(".digitBtn");
 let dataOperator = document.querySelector(".operationBtn");
 let delOperator = document.querySelector(".deleteBtn");
 let clearAll = document.querySelector("#clear");
 let equalTo = document.querySelector("#equalTo");
+let currentOperand = document.querySelector(".current-operation").innerText;
 
 
+// click event for each digit button and to display value in current operand
 dataNum.forEach(item => {
 	item.addEventListener("click", () => {
 		// console.log("ive been clicked");
-		document.querySelector("#current-value").innerText = dataNum;
+		let digit = dataNum.value;
+		console.log(digit)
 	});
 });
 
-
+function digitValue(){
+	 
+};
 
 
 
@@ -80,7 +86,7 @@ dataNum.forEach(item => {
 
 
 
-
+// dark theme toggle function
 const themeSwitch = document.querySelector('input');
 
 themeSwitch.addEventListener('change', () => {
