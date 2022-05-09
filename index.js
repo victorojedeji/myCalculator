@@ -9,9 +9,8 @@ let currentOperand = document.querySelector(".current-operation").innerText;
 
 // click event for each digit button and to display value in current operand
 dataNum.forEach(item => {
-	item.addEventListener("click", () => {
-		// console.log("ive been clicked");
-		let digit = dataNum.value;
+	item.addEventListener("click", function(digit) {
+		digit = Number(this.innerText);
 		console.log(digit)
 	});
 });
