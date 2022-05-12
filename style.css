@@ -204,6 +204,11 @@ input:checked + .slider:before {
     color: var(--outputPrevOperaCol);
     font-size: 1.5rem;
 }
+
+.operator-area {
+    font-size: 1.1rem;
+    color: #808080;
+}
   
 .output .current-operand {
     color: var(--outputCurOperaCol);
