@@ -20,8 +20,7 @@
 .light-theme {
     --fontColor: var(--dark);
     --wrapperBg: var(--light);
-    --outputCol: var(--light);
-    --outputBg: var(--reallyDark);
+    --outputBg: var(--slightWhite);
     --outputPrevOperaCol: var(--opaqueGrey);
     --outputCurOperaCol: var(--light);
     --calcGridBtnBor: var(--borGrey);
@@ -191,6 +190,7 @@ input:checked + .slider:before {
 .output {
     grid-column: 1 / -1;
     background-color: var(--outputBg);
+    border: 1px solid var(--calcGridBtnBor);
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -198,7 +198,6 @@ input:checked + .slider:before {
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
-    color: var(--outputCol);
 }
 
 .output .previous-operand {

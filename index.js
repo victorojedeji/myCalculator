@@ -10,8 +10,8 @@ let currentOperand = document.querySelector(".current-operation").innerText;
 // click event for each digit button and to display value in current operand
 dataNum.forEach(item => {
 	item.addEventListener("click", function(digit) {
-		digit = Number(this.innerText);
-		console.log(digit)
+		digit = this.innerText;
+		document.querySelector(".current-operation").innerText += digit;
 	});
 });
 
