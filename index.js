@@ -26,8 +26,8 @@ dataOperator.forEach(item => {
 		if (document.querySelector("#upper-value").innerText !== "") {
 			dataNum.forEach(item => {
 				item.addEventListener("click", function() {
-					let digit = this.innerText;
-					document.querySelector("#current-value").innerText += digit;
+					let lDigit = this.innerText;
+					document.querySelector("#current-value").innerText += lDigit;
 				});
 			});
 		} 
