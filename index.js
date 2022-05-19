@@ -23,19 +23,22 @@ dataOperator.forEach(item => {
 	item.addEventListener("click", function() {
 		let oper = this.innerText;
 		document.querySelector("#operator").innerText += oper;
-		if (document.querySelector("#upper-value").innerText !== "") {
-			dataNum.forEach(item => {
-				item.addEventListener("click", function() {
-					let lDigit = this.innerText;
-					document.querySelector("#current-value").innerText += lDigit;
-				});
-			});
-		} 
+		dataOPercondition()
 	});
 });
 
 
 
+function dataOPercondition() {
+	if (document.querySelector("#upper-value").innerText !== "") {
+		dataNum.forEach(item => {
+			item.addEventListener("click", function() {
+				let lDigit = this.innerText;
+				document.querySelector("#current-value").innerText += lDigit;
+			});
+		});
+	} 
+}
 
 
 
@@ -73,29 +76,15 @@ dataOperator.forEach(item => {
 function clearOps(){ 
 	clearAll.addEventListener("click", function(){
 		let clear = "";
-		document.querySelector(".current-operation").innerText = clear;
+		document.querySelector("#current-value").innerText = clear;
+		document.querySelector("#upper-value").innerText = clear;
+		document.querySelector("#operator").innerText = clear;
 	});
 };
 clearOps();
 
 
 
-// function getUpperVal(){
-// 	return document.querySelector("#upper-value").innerText;
-// }
-
-// function printUpperVal(value){
-// 	document.querySelector("#upper-value").innerText=value;
-// }
-
-// function getCurrentVal(){
-// 	return document.querySelector("#current-value").innerText;
-// }
-
-// function printCurrentVal(digitVal){
-// 	if (digitVal === '') return document.querySelector("#current-value").innerText = digitVal
-// 	else return document.querySelector("#current-value").innerText = digitVal;
-// }
 
 
 
